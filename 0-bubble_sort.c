@@ -9,3 +9,9 @@
 
 void bubble_sort(int *array, size_t size)
 {
+	size_t
+	int
+	size_t
+	size_t
+
+
