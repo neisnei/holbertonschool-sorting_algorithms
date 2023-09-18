@@ -1,4 +1,4 @@
-#include "sort.h"i
+#include "sort.h"
 
 /**
  * _swap - swap two numbers
@@ -41,5 +41,5 @@ void selection_sort(int *array, size_t size)
 			print_array(array, size);
 		}
 	}
-
 }
+
