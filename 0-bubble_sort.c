@@ -1,21 +1,21 @@
 #include "sort.h"
 
-/*
- * bubble_sort - compare pairs of adjacent elements and swap if in wrong order
+/**
+ * bubble_sort - Bubble algorithm
  * @array: stores elements of the same type
  * @size: size or length of a data structure
- * Return: Always 0
+ * Return: Nothing
  */
 
 void bubble_sort(int *array, size_t size)
 {
 	int tmp;
-	size_t i, m;
+	size_t a, m;
 
 	if (array == NULL || size == 0)
 		return;
 
-	for (i = 0; i < size; i++)
+	for (a = 0; a < size; a++)
 	{
 		for (m = 0; m < size - 1; m++)
 		{
