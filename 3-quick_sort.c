@@ -17,6 +17,44 @@ void _swap(int *a, int *b)
 }
 
 /**
+ * _split - Split the array, takes last
+ * @arr: Array
+ * @min: first element
+ * @last: The last element
+ * @size: size
+ * Return: integer
+ **/
+int _split(int *arr, int min, int last, size_t size)
+{
+	int piv;
+	int r = (min);
+	int x;
+
+	piv = arr[last];
+	for (x = min; x < last; x++)
+	{
+		if (arr[x] <= piv)
+		{
+
+			_swap(&arr[r], &arr[x]);
+
+
+			if (r != x)
+				print_array(arr, size);
+
+			r++;
+
+		}
+	}
+
+	_swap(&arr[r], &arr[last]);
+	if (r != x)
+		print_array(arr, size);
+
+	return (r);
+}
+
+/**
  * quick_sort_array - sort ariray
  * @arr: arr
  * @min: min
@@ -49,3 +87,4 @@ void quick_sort(int *array, size_t size)
 
 	quick_sort_array(array, 0, size - 1, size);
 }
+
